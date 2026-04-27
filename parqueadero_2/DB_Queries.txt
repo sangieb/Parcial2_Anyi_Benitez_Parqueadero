@@ -1,3 +1,13 @@
+CREATE DATABASE parqueadero_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
+
+### Script de datos (ejecutar DESPUÉS de correr la app por primera vez)
+
+```sql
+SET SQL_SAFE_UPDATES = 0;
+SET FOREIGN_KEY_CHECKS = 0;
+
+
 USE parqueadero_db;
 
 DELETE FROM usuario;
