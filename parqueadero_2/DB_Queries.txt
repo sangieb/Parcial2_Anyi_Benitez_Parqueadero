@@ -1,0 +1,18 @@
+USE parqueadero_db;
+
+DELETE FROM usuario;
+DELETE FROM tipo_vehiculo;
+DELETE FROM rol;
+
+INSERT INTO rol (nombre) VALUES ('ADMIN');
+INSERT INTO rol (nombre) VALUES ('ACOMODADOR');
+INSERT INTO rol (nombre) VALUES ('CLIENTE');
+
+INSERT INTO tipo_vehiculo (nombre) VALUES ('Carro');
+INSERT INTO tipo_vehiculo (nombre) VALUES ('Moto');
+INSERT INTO tipo_vehiculo (nombre) VALUES ('Camión');
+
+INSERT INTO usuario (username, password, rol_id) VALUES 
+('admin', 'Admin123', 1),
+('acomodador', 'Acomodador123', 2),
+('cliente', 'Cliente123', 3);
